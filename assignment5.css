@@ -5,8 +5,34 @@ html
     scroll-behavior: smooth;
 }
 
+a
+{
+  text-decoration: none;
+  color: black;
+}
 
-body
+label
+{  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 320%;
+  color: white;
+}
+
+input.labelclass
+{  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 220%;
+}
+
+
+.loginpage
+{
+  width: 100%;
+  height: auto;
+  padding : 5% 0;
+  background-image: url("loginimage.png");
+  background-size: cover;
+}
+
+body.main
 {
   /* FONT FAMILIES IN USE
   font-family: 'PT Sans Narrow', sans-serif;
@@ -19,9 +45,48 @@ font-family: 'Merriweather', serif;
 font-family: 'Squada One', cursive;
    */
   margin : 0;
-  background-color: rgba(192,192,192,0.2);
+  background-color: rgba(192,192,192,0.1);
+  /*  */
   line-height: 1;
 }
+
+button.watchsmall
+{
+  font-family: 'PT Sans Narrow', sans-serif;
+  margin: 0 10px;
+  padding: 5px 38px;
+  border-radius: 6px;
+  transition: all .1s linear;
+  cursor: pointer;
+  background-color: rgba(207, 0, 15, 1);
+  color: white;
+  font-size: 120%;
+  font-weight: 600;
+}
+
+button.watchsmall:hover
+{
+background-color: rgba(150, 40, 27, 1);
+}
+
+button.watchmain:hover {
+  background: orange;
+  color: black;
+}
+
+button.watchmain {
+  font-family: 'PT Sans Narrow', sans-serif;
+  margin: 0 10px;
+  padding: 10px 48px;
+  border-radius: 6px;
+  transition: all .1s linear;
+  cursor: pointer;
+  background-color: rgba(125, 181, 254, 0.3);
+  color: white;
+  font-size: 150%;
+  font-weight: 600;
+}
+
 
 h1
 {
@@ -44,14 +109,18 @@ h3
   font-family: 'PT Sans Narrow', sans-serif;
 }
 
+.firstpart
+{
+
+}
+
 .infoimg
 {
   position: relative;
-  top: -10px;
   float: left;
   display: flex;
   left: 10%;
-  width: 35%;
+  width: 28%;
   height: auto;
 }
 
@@ -77,12 +146,11 @@ h3
   height: auto;
 }
 
-.spotlight-vid
-{
-object-fit: cover;
-  /* width="1220" height="640" */
+video {
+  width: 70%;
+  height: auto;
+  z-index: -2;
 }
-
 .linkers
 {
   position: absolute;
@@ -105,10 +173,44 @@ object-fit: cover;
 font-size: 22px;
 }
 
-.infoblock
+.infoblocklogin
 {
+  background-color: white !important;
+  height: 100%;
+  width: 100%;
+}
+
+.infoblock1
+{
+    background-image: url("pickbg1.png");
+}
+
+.infoblock2
+{
+    background-image: url("recommendbg.png");
+}
+
+.infoblock3
+{
+    background-image: url("historybg.png");
+}
+
+.infoblock4
+{
+    background-image: url("mostwatchedbg.png");
+}
+
+.infoblock1 , .infoblock2 , .infoblock3 , .infoblock4
+{
+  color: white;
   background-color: rgba(192,192,192,0.5);
-  padding : 1%;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  z-index: -1;
+  padding: 17% 0;
+  height: 100%;
+  margin: auto;
 }
 
 .container
@@ -119,6 +221,7 @@ font-size: 22px;
   position: fixed;
   width: 100%;
   top: 0;
+  z-index: 3;
 }
 
 .logoclass
@@ -166,15 +269,24 @@ font-size: 22px;
   padding : 0 10px;
 }
 
+.twolinesofrec
+{
+  background-color : rgba(236, 100, 75, 0.1);
+  padding: 2% 0;
+}
+
 .spotlight-video
 {
 text-align: center;
+background-color: rgba(219, 10, 91, 0.1);
+width: 100%;
+padding: 3px 0;
 }
 
 .spot_video
 {
-  width: 100%;
-  height: 100%;
+  width: 80%;
+  height: 80%;
 }
 .thumbnailx
 {
@@ -209,6 +321,7 @@ text-align: center;
 {
   display: inline-block;
   padding : 2%;
+height: auto;
   width: 20%;
   background-color: white;
 }
@@ -371,7 +484,7 @@ font-size: 70%;
 {
   h1
   {
-    font-size: 100%;
+    font-size: 90%;
   line-height: 0.5;
   }
 

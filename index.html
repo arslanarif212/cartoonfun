@@ -3,59 +3,62 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="assignment5.css">
-    <link rel="shortcut icon" href="favicon.png">
+    <link rel="shortcut icon" href="fav.png">
     <title>Cartoon Fun - Best place to watch cartoons online</title>
   </head>
-  <body>
+  <body class="main">
 <header>
   <div class="container">
     <div class="logo">
-      <img src="biglogo.png" alt="" class="logoclass">
+      <a href="#"> <img src="biglogo.png" alt="" class="logoclass"> </a>
     </div>
     <div class="searchbar">
       <input enctype="text/plain" type="text" name="search" value="" placeholder=" Search your favourite show here..." size="90" class="searchb"> <a class="mag" href="#">🔍</a>
     </div>
     <div class="utility-icons">
-      <p class="linktext">Favourites</p> <img src="favourites.png" alt="favourites" class="utility-icons-1">
-      <p class="linktext">Register</p> <img src="register.png" alt="favourites" class="utility-icons-1">
-      <p class="linktext">Login</p> <img src="login.png" alt="login image" class="utility-icons-1">
+      <a href="/favourites.html"><p class="linktext">Favourites</p> <img src="favourites.png" alt="favourites" class="utility-icons-1"></a>
+      <a href="/register.html"><p class="linktext">Register</p> <img src="register.png" alt="favourites" class="utility-icons-1"></a>
+      <a href="/login.html"><p class="linktext">Login</p> <img src="login.png" alt="login image" class="utility-icons-1"></a>
+
     </div>
     <div class="linkers">
       <a href="#" class="linkers-1">HOME</a> <a href="#REC" class="linkers-1">RECOMMENDATIONS</a> <a href="#HISTORY" class="linkers-1">HISTORY</a> <a href="#MOSTWATCHED" class="linkers-1">MOST WATCHED</a>
     </div>
   </div>
 </header>
-<br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br>
 <section>
-  <div class="infoblock" align="center">
-    <div class="infoimg">
-      <img src="pick.png" class="infoimg">
-    </div>
+  <div class="firstpart" align="center">
+  <div class="infoblock1">
     <div class=""  align="center">
     <h1>Pick of the Day</h1>
-    <h3>A random person bakes a cake..</h3>
+    <h3>Chosen just for you...</h3>
+    <br><br><br>
+    <button class="watchmain" onclick="window.location.href = '#watch1';">Watch</button>
     </div>
-
-
-  </div>
+  </div><br><h6  id="watch1"></h6><br><br><br><br>
   <div class="spotlight-video">
     <br><br>
-    <video class="spotlight-vid" controls>
-      <source src="Baking.mp4" type="video/mp4">
+    <video class="spotlight-vid" controls width="1000px" height="750px">
+      <source src="Baking.mp4" type="video/mp4" >
     You're using a 10th century browser that doesn't support watching videos - Please upgrade your machine or read a book.
     </video>
     <h6  id="REC"></h6>
   </div>
 <br><br><br><br><br><br><br>
+</div>
 </section>
 
 <section>
 
-<div class="infoblock" align="center">
-  <h1><img src="recomendations.png" class="infoimgrec">Recommendations</h1>
+<div class="infoblock2" align="center">
+  <h1>Recommendations</h1>
   <h3>Based on your viewing history</h3>
-</div>
-<br><br><br><br><br>
+  <br><br><br>
+  <button class="watchmain" onclick="window.location.href = '#watch2';">Watch</button>
+</div><h6 id="watch2"></h6>
+<br><br><br><br>
+<div class="twolinesofrec">
 <div class="recline1" align="center">
 <div class="Recommendations">
       <div class="screenshot1" align="center">
@@ -70,6 +73,7 @@
       <div class="stats">
         <h2>200k Views - 2 years ago</h2>
       </div>
+      <button class="watchsmall" onclick="window.location.href = '#';">Watch</button>
       </div>
       <div class="Recommendations">
             <div class="screenshot1" align="center">
@@ -84,13 +88,14 @@
             <div class="stats">
               <h2>200k Views - 2 years ago</h2>
             </div>
+            <button class="watchsmall" onclick="window.location.href = '#';">Watch</button>
             </div>
             <div class="Recommendations">
                   <div class="screenshot1" align="center">
-                    <img src="46067.jpg" alt="" class="thumbnailx">
+                    <img src="hank.jpg" alt="" class="thumbnailx">
                   </div>
                   <div class="Title" align="center">
-                    <h2>Morning of the land of the unknown</h2>
+                    <h2>King of the Hill - Hank is running out of Propane</h2>
                   </div>
                   <div class="maker">
                     <h2>Brilliant Monkey</h2>
@@ -98,10 +103,11 @@
                   <div class="stats">
                     <h2>200k Views - 2 years ago</h2>
                   </div>
+                  <button class="watchsmall" onclick="window.location.href = '#';">Watch</button>
                   </div>
                   </div>
                   <br><br><br>
-                  <div class="recline2" align="center">
+                  <div class="recline2" align="center" >
                   <div class="Recommendations">
                         <div class="screenshot1" align="center">
                           <img src="tj.jpg" alt="" class="thumbnailx">
@@ -115,13 +121,14 @@
                         <div class="stats">
                           <h2>200k Views - 2 years ago</h2>
                         </div>
+                        <button class="watchsmall" onclick="window.location.href = '#';">Watch</button>
                         </div>
                         <div class="Recommendations">
                               <div class="screenshot1" align="center">
                                 <img src="sc.jpeg" alt="" class="thumbnailx">
                               </div>
                               <div class="Title" align="center">
-                                <h2>Swat Kats - Strengths, Weaknesses, Actions and Tricks</h2>
+                                <h2>Swat Kats - Tricked into treats of trouble</h2>
                               </div>
                               <div class="maker">
                                 <h2>Brilliant Monkey</h2>
@@ -129,6 +136,7 @@
                               <div class="stats">
                                 <h2>200k Views - 2 years ago</h2>
                               </div>
+                              <button class="watchsmall" onclick="window.location.href = '#';">Watch</button>
                               </div>
                               <div class="Recommendations">
                                     <div class="screenshot1" align="center">
@@ -143,21 +151,22 @@
                                     <div class="stats">
                                       <h2>200k Views - 2 years ago</h2>
                                     </div>
-                                    </div><h6  id="HISTORY"></h6><br><br><br><br>
+                                    <button class="watchsmall" onclick="window.location.href = '#';">Watch</button>
+                                    </div><h6  id="HISTORY"></h6><br>
+                                  </div>
                                   </div>
 </section>
-<br><br><br><br><br>
+<br><br><br><br><br><br>
 <section class="history">
-  <div class="infoblock" align="center">
-    <div class="infoimghistory">
-      <img src="history.png" class="infoimghistory">
-    </div>
+  <div class="infoblock3" align="center">
     <div class="" align="center">
       <h1>History</h1>
       <h3>Previously Watched Videos</h3>
+      <br><br><br>
+      <button class="watchmain" onclick="window.location.href = '#watch3';">Watch</button>
     </div>
 
-  </div>
+  </div><h6  id="watch3"></h6>
   <br><br><br><br><br>
     <div class="historycontainer">
       <div class="historyline">
@@ -209,16 +218,18 @@
                           <h2>200k Views - 2 years ago</h2>
                         </div><h6  id="MOSTWATCHED"></h6>
                         </div>
-                        </div><br><br><br><br><br><br><br><br>
+                        </div><br>
 </div>
 </section>
 <br><br><br><br><br><br>
 <section>
-  <div class="infoblock" align="center">
+  <div class="infoblock4" align="center">
     <h1>MOST WATCHED</h1>
     <h3>Popular in your country</h3>
+    <br><br><br>
+    <button class="watchmain" onclick="window.location.href = '#watch4';">Watch</button>
   </div>
-  <br><br><br><br><br>
+  <br><h6  id="watch4"></h6><br><br><br><br>
   <div class="recline1" align="center">
   <div class="mostwatchedrec">
         <div class="screenshot1" align="center">
