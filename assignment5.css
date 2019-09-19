@@ -5,6 +5,11 @@ html
     scroll-behavior: smooth;
 }
 
+body.loginp
+{
+  margin : 0;
+}
+
 a
 {
   text-decoration: none;
@@ -22,12 +27,55 @@ input.labelclass
   font-size: 220%;
 }
 
+.loginbutton {
+	-moz-box-shadow:inset 0px 1px 0px 0px #dcecfb;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #dcecfb;
+	box-shadow:inset 0px 1px 0px 0px #dcecfb;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #bddbfa), color-stop(1, #80b5ea));
+	background:-moz-linear-gradient(top, #bddbfa 5%, #80b5ea 100%);
+	background:-webkit-linear-gradient(top, #bddbfa 5%, #80b5ea 100%);
+	background:-o-linear-gradient(top, #bddbfa 5%, #80b5ea 100%);
+	background:-ms-linear-gradient(top, #bddbfa 5%, #80b5ea 100%);
+	background:linear-gradient(to bottom, #bddbfa 5%, #80b5ea 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#bddbfa', endColorstr='#80b5ea',GradientType=0);
+	background-color:#bddbfa;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #84bbf3;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:15px 76px;
+	text-decoration:none;
+	text-shadow:0px 4px 0px #528ecc;
+}
+.loginbutton:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #80b5ea), color-stop(1, #bddbfa));
+	background:-moz-linear-gradient(top, #80b5ea 5%, #bddbfa 100%);
+	background:-webkit-linear-gradient(top, #80b5ea 5%, #bddbfa 100%);
+	background:-o-linear-gradient(top, #80b5ea 5%, #bddbfa 100%);
+	background:-ms-linear-gradient(top, #80b5ea 5%, #bddbfa 100%);
+	background:linear-gradient(to bottom, #80b5ea 5%, #bddbfa 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#80b5ea', endColorstr='#bddbfa',GradientType=0);
+	background-color:#80b5ea;
+}
+.loginbutton:active {
+	position:relative;
+	top:1px;
+}
+
+
 
 .loginpage
 {
+  top: 0;
   width: 100%;
-  height: auto;
-  padding : 5% 0;
+  height: 80%;
+  padding : 2% 0;
   background-image: url("loginimage.png");
   background-size: cover;
 }
@@ -275,10 +323,16 @@ font-size: 22px;
   padding: 2% 0;
 }
 
+.histobut
+{
+  position: relative;
+  left: 75%;
+}
+
 .spotlight-video
 {
 text-align: center;
-background-color: rgba(219, 10, 91, 0.1);
+background-color: rgba(219, 210, 91, 0.1);
 width: 100%;
 padding: 3px 0;
 }
@@ -306,6 +360,14 @@ padding: 3px 0;
   display: inline;
   font-family: 'PT Sans Narrow', sans-serif;
       font-size: 15px;
+}
+
+.historycontainer
+{
+  background-color: rgba(219, 10, 91, 0.1);
+  width: 70%;
+  margin: auto;
+  padding: 2% 0;
 }
 
 .mostwatchedrec
@@ -433,6 +495,17 @@ font-size: 70%;
   left: 250px;
 }
 
+.loginpage
+{
+  width: 50%;
+  display: grid;
+}
+
+.labelclass
+{
+  width: 70% !important;
+  font-size: 120% !important;
+}
 
 }
 
@@ -447,9 +520,15 @@ font-size: 70%;
     width: 100px;
     height: 100px;
   }
+    .loginbutton
+    {
+      width: 60%;
+      border-radius: 10%;
+      font-size: 70% !important;
+    }
 }
 
-@media only screen and (max-width:816px)
+@media only screen and (max-width:866px)
 {
 .linkers
 {
@@ -478,31 +557,76 @@ font-size: 70%;
   {
     font-size: 13px;
   }
+  .labelclass
+  {
+    width: 50% !important;
+    font-size: 80% !important;
+  }
+
+}
+@media only screen
+  and (min-device-width: 250px)
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait)
+
+  {
+
+button.watchmain
+{
+  display: none !important;
 }
 
-@media only screen and (max-width:400px)
+/* @media only screen and (max-width:400px)
+{ */
+
+h1
 {
-  h1
-  {
-    font-size: 90%;
-  line-height: 0.5;
-  }
+  font-size: 600%;
 
-  h2
-  {
-    font-size: 20%;
-  line-height: 0.5;
-  }
+}
 
-  h3
-  {
-    line-height: 0.5;
-    font-size: 50%;
-  }
+h2
+{
 
+  font-size: 200%;
+  font-weight: 600;
+}
+
+h3
+{
+
+  font-size: 400%;
+
+}
+
+.linkers-1
+{
+  display: none !important;
+}
+
+.searchb
+{
+  width: 70% !important;
+}
 
 .infoblock , .spotlight-video{
-  width: 50% !important;
+  width: 100% !important;
   margin: auto;
 }
+
+.Recommendations
+{
+
+  padding: 5% 2%;
+  width: 50%;
+  display: grid !important;
+}
+
+button.watchsmall
+{
+  font-size: 220% !important;
+}
+
+
 }
